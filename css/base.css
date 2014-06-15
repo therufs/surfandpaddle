@@ -8,46 +8,34 @@
   font-family: "Asap", sans-serif;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: "Asap", sans-serif;
-}
-
 div#header {
-  overflow:auto;
-}
-
-/*img#headerimg {
-  position:absolute;
-  float:top;
-  margin: auto;
-  max-width:100%;
-  z-index: -999;
-  -webkit-filter: saturate(0.7);
-  -webkit-filter: brightness(0.9);
-}*/
-
-/* Need to set container div to have that quality the hamster div had. */
-
-div.overlay {
-  position:relative;
-  float:top;
-  background: rgba(30, 60, 90, .5);
-  z-index:15;
-  height: 100%; /* why is this 377px if container is 428?! */
-  width: 100%;
+  overflow: auto;
+  position: relative;
+  height: 400px;
+  z-index: 15;
   background: linear-gradient(to bottom, rgba(30,87,153,0.5) 0%,rgba(30,87,153,0.5) 100%), url('../images/beachhead.jpg') repeat;
+  background-size: auto;
+  background-position: center bottom;
 }
 
-div#spbloglink {  /* make stuff white */
+div#topleft {  /* make stuff white */
   position:absolute;
   top:20px;
-  left:150px;
+  left:80px;
   z-index:15;
+}
+
+div#spbloglink {
+  position:absolute;
+  top:3%;
+  left:3%;
+  vertical-align:center;
 }
 
 img#wavelogo {
+  position:absolute;
+  top:3%;
+  left:3%;
   width:40px;
   z-index:15;
 }
@@ -60,11 +48,11 @@ div#search {
 }
 
 div#maintitle {
-  position:relative;
-  top:0%;
-  bottom: 0%;
+  position:absolute;
+  top:50%;
+  bottom: 50%;
   font-size:76px;
-  line-height:0.2em;
+  line-height:0.6em;
   width:100%;
   text-align: center;
   font-family: 'Orienta', sans-serif;
@@ -87,6 +75,7 @@ h6 {
   font-size: 12px;
   font-color: black;
   center: true;
+  font-family: 'Asap', sans-serif;
 }
 
 .allcaps {
@@ -134,4 +123,8 @@ blockquote {
   border-left: 2px solid gray;
   padding: 5px;
   text-transform: uppercase;
+}
+
+li {
+  display:inline;
 }
