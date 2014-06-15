@@ -1,0 +1,137 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+           box-sizing: border-box;
+  margin:0px;
+  border:0px;
+  padding:0px;
+  font-family: "Asap", sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Asap", sans-serif;
+}
+
+div#header {
+  overflow:auto;
+}
+
+/*img#headerimg {
+  position:absolute;
+  float:top;
+  margin: auto;
+  max-width:100%;
+  z-index: -999;
+  -webkit-filter: saturate(0.7);
+  -webkit-filter: brightness(0.9);
+}*/
+
+/* Need to set container div to have that quality the hamster div had. */
+
+div.overlay {
+  position:relative;
+  float:top;
+  background: rgba(30, 60, 90, .5);
+  z-index:15;
+  height: 100%; /* why is this 377px if container is 428?! */
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(30,87,153,0.5) 0%,rgba(30,87,153,0.5) 100%), url('../images/beachhead.jpg') repeat;
+}
+
+div#spbloglink {  /* make stuff white */
+  position:absolute;
+  top:20px;
+  left:150px;
+  z-index:15;
+}
+
+img#wavelogo {
+  width:40px;
+  z-index:15;
+}
+
+div#search {
+  position:absolute;
+  z-index:15;
+  top:20px;
+  left:600px;
+}
+
+div#maintitle {
+  position:relative;
+  top:0%;
+  bottom: 0%;
+  font-size:76px;
+  line-height:0.2em;
+  width:100%;
+  text-align: center;
+  font-family: 'Orienta', sans-serif;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.7);
+  z-index:100;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  text-transform:uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h6 {
+  text-transform: none;
+  font-size: 12px;
+  font-color: black;
+  center: true;
+}
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+}
+
+.skinny {
+  font-family: 'Oswald', sans-serif;
+}
+
+div#main {
+  width: auto;
+  height: auto;
+}
+
+div#content {
+  padding:2%;
+  float:left;
+  width:55%;
+}
+
+div#sidebar {
+  padding:2%;
+  float:right;
+  width:35%;
+  height: 100%;
+}
+
+div#footer {
+  clear: both;
+
+}
+
+div#navbar {
+
+}
+
+blockquote {
+  color: blue;
+  size: 18px;
+  border-left: 2px solid gray;
+  padding: 5px;
+  text-transform: uppercase;
+}
