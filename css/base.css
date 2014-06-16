@@ -21,37 +21,38 @@ div#header {
 div#topleft {  /* make stuff white */
   position:absolute;
   top:20px;
-  left:80px;
+  left:15%;
   z-index:15;
 }
 
 div#spbloglink {
-  position:absolute;
-  top:3%;
-  left:3%;
-  vertical-align:center;
+  position:relative;
+  float:right;
+  vertical-align:middle;
 }
 
 img#wavelogo {
-  position:absolute;
+  position:relative;
   top:3%;
-  left:3%;
+  right:5%;
   width:40px;
   z-index:15;
+  float:left;
 }
 
 div#search {
   position:absolute;
   z-index:15;
   top:20px;
-  left:600px;
+  right:15%;
+  font-family: "Oswald", sans-serif;
 }
 
 div#maintitle {
   position:absolute;
   top:50%;
   bottom: 50%;
-  font-size:76px;
+  font-size:6em;
   line-height:0.6em;
   width:100%;
   text-align: center;
@@ -60,8 +61,25 @@ div#maintitle {
   z-index:100;
 }
 
+div.headshot{
+  width:80px;
+  height:80px;
+  border:1px;
+  border-radius:40px;
+  overflow:hidden;
+  background-image:url('../images/chickenface.jpg');
+  background-position:center;
+  float:left;
+}
+
+div.byline {
+  height:80px;
+}
+
 h1 {
   text-transform: uppercase;
+  font-size: 3em;
+  line-height:1.2em;
   font-family: 'Oswald', sans-serif;
 }
 
