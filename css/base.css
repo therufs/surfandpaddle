@@ -8,6 +8,12 @@
   font-family: "Asap", sans-serif;
 }
 
+div {
+  border:1px;
+  border-style:solid;
+  border-color: red;
+}
+
 div#header {
   overflow: auto;
   position: relative;
@@ -20,15 +26,17 @@ div#header {
 
 div#topleft {  /* make stuff white */
   position:absolute;
-  top:20px;
+  top:15px;
   left:15%;
   z-index:15;
 }
 
 div#spbloglink {
   position:relative;
+  top:10px;
   float:right;
   vertical-align:middle;
+  font-family:'Orienta', sans-serif;
 }
 
 img#wavelogo {
@@ -138,7 +146,7 @@ div#navbar {
 }
 
 blockquote {
-  color: blue;
+  color: #1199CC;
   size: 18px;
   border-left: 2px solid gray;
   padding: 5px;
@@ -151,6 +159,10 @@ li {
   font-family: 'Oswald', sans-serif;
   padding:10px;
   font-size:2em;
+}
+
+a {
+  color: #1199CC;
 }
 
 div.popular {
